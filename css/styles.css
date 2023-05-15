@@ -52,14 +52,8 @@ body {
 
 .header {
   padding: 24px 0;
-  border-bottom: 1px solid var(--border-color); 
-}
-
-.hero {
-  background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header > .container {
@@ -141,6 +135,10 @@ body {
 .hero {
   padding: 188px 0;
   background-color: var(--font-color);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero > .container {
@@ -196,6 +194,7 @@ padding: 120px 0;
   margin-bottom: 8px;
   background-color: var(--dark-white-color);
   border-radius: 4px;
+  align-items: center;
 }
 
 .info-item-title {
@@ -331,8 +330,15 @@ display: flex;
 gap: 24px;
 }
 
+.customer-item {
+  width: calc((100% - 120px) / 6); 
+  height: 88px;
+}
+
 .customer-item-link {
 display: flex;
+align-items: center;
+justify-content: center;
 padding: 16px 32px;
 border: 1px solid var(--subtle-text);
 border-radius: 4px;
@@ -348,7 +354,7 @@ color: var(--subtle-text);
 .customer-item-link:hover,
 .customer-item-link:focus {
 color: var(--dark-violet-color);
-border: 1px solid var(--dark-violet-color);
+border-color: var(--dark-violet-color);
 }
 
 .footer {
@@ -358,6 +364,7 @@ border: 1px solid var(--dark-violet-color);
 
 .footer > .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-wrapper-left {
@@ -407,6 +414,7 @@ letter-spacing: 0.02em;
 }
 
 .filter-btn {
+  display: block;
   padding: 12px 24px;
   font-family: "Roboto", sans-serif;
   background-color: var(--dark-white-color);
@@ -426,7 +434,7 @@ letter-spacing: 0.02em;
   color: var(--white-color);
   background-color: var(--dark-violet-color);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list {
