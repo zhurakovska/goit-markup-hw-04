@@ -264,7 +264,7 @@ padding: 120px 0;
 
 
 .team-text-wpar {
-padding: 32px 16px; 
+  padding: 32px 0; 
 }
 
 .team-name {
@@ -357,8 +357,8 @@ color: var(--subtle-text);
 
 .customer-item-link:hover,
 .customer-item-link:focus {
-color: var(--dark-violet-color);
-border-color: var(--dark-violet-color);
+  color: var(--dark-violet-color);
+  border-color: var(--dark-violet-color);
 }
 
 .footer {
